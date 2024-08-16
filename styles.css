@@ -1,0 +1,222 @@
+:root{
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+
+
+    --accent-color: #534426;
+    --text-color: #ffffff;
+    /* --background-color: #090804; */
+    --background-color:#2C2A26;
+    --head-fontFamily: 'Barlow Semi Condensed', sans-serif; 
+    --head-fontWeight: 700; 
+    --head-fontStyle: normal; 
+    --head-fontSize: 1.25; 
+    --head-fontHeight: 1.15; 
+    --body-fontFamily: 'Hanken Grotesk', sans-serif; 
+    --body-fontWeight: 300; 
+    --body-fontStyle: normal; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    font-family: var(--head-fontFamily);
+    font-weight: var(--head-fontWeight);
+    font-style: var(--head-fontStyle);
+}
+
+p, a {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    font-family: var(--body-fontFamily);
+    font-weight: var(--body-fontWeight);
+    font-style: var(--body-fontStyle);
+}
+
+/* section:hover {
+    border: white solid 1px;
+} */
+
+.navbar {
+    background: #000000;
+    text-align: center;
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.herosection {
+    background-image: url('images/Fa5hK-sDRSi1WDroiPwRnA-Photoroom.png');
+    background-color: rgba(44, 42, 38, 0.702);
+    background-blend-mode: darken;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.herosection-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+
+}
+.herosection-content > h1 {
+    font-size: 6vw;
+    margin-top: 0; 
+    margin-bottom: 20px; 
+}
+.herosection-content > p {
+    margin-top: 0;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.featuresection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    justify-items: start;
+    padding-left: 5%;
+}
+
+.featuresection-content {
+    padding: 10%;
+}
+
+.featuresection > span > h2 {
+    font-size: 4vw;
+    margin-top: 0; 
+    margin-bottom: 20px; 
+}
+.featuresection > span > p {
+    margin-top: 0;
+}
+
+
+#curvedtransition{
+    --c: 70px; /* control the curvature (works with percentage) */
+    height: 100px;
+    width: 100%;
+    /* aspect-ratio: 3/2; */
+    /* you can also update the 60%  */
+    mask: radial-gradient(60% var(--c) at top,#0000 calc(100% - 1px),#000);
+    background: #000000;
+}
+.benefitssection {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+
+.benefitssection-content {
+    padding: 10%;
+}
+
+.benefitssection > span > h2 {
+    font-size: 4vw;
+    margin-top: 0; 
+    margin-bottom: 40px; 
+}
+
+
+.benefitssection > span > div {
+    display: flex;
+    gap: 5%;
+
+}
+.benefitssection-benefit > h3 {
+    font-size: 2vw;
+    margin-top: 0; 
+    margin-bottom: 20px; 
+}
+.benefitssection-benefit > p {
+    margin-top: 0;
+
+}
+
+
+.teamsection {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+
+}
+.teamsection-content {
+    width:50%;
+    text-align:center;
+}
+
+.teamsection-content > h2 {
+    font-size: 3vw;
+    margin-top: 0; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+.teamsection-content > p {
+    margin-top: 0;
+}
+
+.contactsection {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+
+}
+.contactsection-content {
+    text-align:center;
+}
+
+
+.contactsection-content > h2 {
+    font-size: 3vw;
+    margin-top: 0; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+svg.phone {
+    --color: var(--text-color);
+    width: 30px;
+    height: 30px;
+}
+/* svg.phone:hover {
+    --color: yellow;
+} */
+
+.footer {
+    background: #000000;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}

@@ -3,10 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortress Protections</title>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Fortress Protections</h1>
-    <p>Coming soon...</p>
+    <div class="navbar" >
+        <img src="/images/logo.png" alt="logo" style="height:90px" />
+    </div>
+      
+    <section>
+        <div class="herosection" id="herosection">
+
+            <div class="herosection-content" id="herosection-content">
+                <h1>Protect Your Business with Advanced Cybersecurity Solutions</h1>
+                <p>Fortress Protections offers the best cybersecurity products to keep your organization safe.</p>
+                <a href="#feature"><button>Learn More</button></a>
+            </div>
+        </div>
+    </section>
+    <a id="feature" style="scroll-margin-top: 100px;"></a>
+    <section>
+        <div class="featuresection" id="featuresection">
+            <span class="featuresection-content">
+                <h2>Introducing CloudCover CC/B1: The Next Evolution in Network Security and Cyber Insurance</h2>
+                <p>Safeguard your organization with CloudCover's CC/B1, an AI-driven cybersecurity solution offering microsecond threat detection and response. Seamlessly integrating with your existing security, CC/B1 provides comprehensive, end-to-end protection across all network endpoints, including IoT and cloud environments. What makes CC/B1 unique is its embedded cyber insurance, adjusting premiums based on real-time risk. Experience next-level cybersecurity with CloudCover CC/B1—where advanced threat prevention meets intelligent risk management.</p>
+    
+            </span>
+            <span class="featuresection-content">
+                <img src="images/iCWfc2dWRuyPbHSj6-13EQ.png" alt="CloudCover" style="width: 100%; height: auto;" />
+            </span>
+        </div> 
+    </section> 
+    <div id="curvedtransition"></div>
+    <section>
+        <div class="benefitssection" id="benefitssection">
+            <span class="benefitssection-content">
+                <h2>Revolutionary Cybersecurity: Instant Threat Detection, Seamless Protection, and Embedded Risk Management</h2>
+                <div>
+                    <span class="benefitssection-benefit">
+                        <h3>Near-Instant Threat Detection and Response</h3>
+                        <p>The CC/B1 Platform's ability to detect and block threats in microseconds at the TLS handshake stage is a game-changer. This rapid response minimizes the window of opportunity for attackers, effectively neutralizing threats before they can penetrate the network. The platform’s sub-second accuracy ensures that the company remains protected from a wide range of cyber threats, including sophisticated multi-vector attacks, with minimal false positives.</p>
+                    </span>
+                    <span class="benefitssection-benefit">
+                        <h3>Comprehensive, Network-Wide Protection Without Disruption</h3>
+                        <p>The platform's ability to provide a seamless, non-invasive layer of security across all network endpoints—including on-premise, cloud, and IoT devices—ensures that the entire network is covered without the need for disruptive "rip and replace" upgrades. This allows for quick deployment and immediate security enhancements, reducing the risk of breaches across diverse and distributed environments.</p>
+                    </span>
+                    <span class="benefitssection-benefit">
+                        <h3>Embedded Cyber-Insurance and Risk Management</h3>
+                        <p>The integration of cybersecurity with embedded cyber-insurance through the CC/B1 Platform adds a unique layer of financial protection. By continuously monitoring and recording network activity, the platform not only improves security but also helps accurately assess and lower insurance premiums based on real-time risk scoring. This combination of proactive security and insurance ensures that the company is financially protected against potential breaches, while also meeting regulatory and compliance requirements.</p>
+                    </span>
+                </div>
+
+                
+            </span>
+        </div> 
+    </section>
+
+    <section>
+        <div class="teamsection" id="teamsection">
+            <span class="teamsection-content">
+                <img src="images/1617499899637.jpg" alt="Greg" style="width: 250px; height: auto;" />
+                <h2>Greg Boutchard</h2>
+                <p>He specializes in ethical hacking<br/>and vulnerability assessment.</p>
+                <a href="https://www.linkedin.com/in/greg-boutchard-8885768/" target="_blank">
+                    <button>LinkedIn</button>
+                </a>
+            </span>
+            <span class="teamsection-content">
+                <img src="images/profile-pic_room_sq.png" alt="Greg" style="width: 250px; height: auto;" />
+                <h2>Jeremy Lane</h2>
+                <p>He is highly skilled in data<br/>encryption and endpoint protection.</p>
+                <a href="https://www.linkedin.com/in/jeremylane/" target="_blank">
+                    <button>LinkedIn</button>
+                </a>
+    
+            </span>
+        </div>        
+    </section>
+
+    <section>
+        <div class="contactsection">
+
+            <div class="contactsection-content">
+                <svg class="phone">
+                    <use xlink:href="icons/phone.svg#phone"></use>
+                </svg>
+                <h2>Phone</h2>
+                <p>To speak with a representative, please call us.</p>
+
+                <p><a href="tel:1-800-555-1234">1-800-555-1234</a></p>
+    
+            </div>
+        </div>
+    </section>
+    <div class="footer" >
+        <img src="/images/logo.png" alt="logo" style="height:90px" />
+    </div>
+ 
+    <script>
+    // Hero section height
+    const heroresize = () => {
+        let width = window.innerWidth;
+        let height = (width * 720 / 1280);
+        console.log(width, height);
+        document.getElementById('herosection').style.height = height + 'px';
+    }
+    window.onload = heroresize;
+    window.onresize = heroresize;
+
+    </script>
+
 </body>
 </html>
